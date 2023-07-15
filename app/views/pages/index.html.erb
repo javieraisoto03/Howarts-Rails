@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Ubicacion</th>
+      <th scope="col">Casa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.location %></td>
+        <td><%= character.name %></td>
+        <td><%= character.house %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
